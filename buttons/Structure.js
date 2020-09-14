@@ -64,6 +64,9 @@ const values = {
 		light: 'btn-light',
 		transparent: 'btn-transparent',
 		link: 'btn-link',
+		slate: 'btn-slate',
+		blue: 'btn-blue',
+		danger: 'btn-danger',
 	},
 	buttonOutline: {
 		outlined: 'btn-outlined',

@@ -21,11 +21,12 @@ const TextStructure = props => {
 const LinkStructure = props => {
 	const fontSize = useStyle(props, values.fontSize);
 	const fontWeight = useStyle(props, values.fontWeight);
+	const clickableTypes = useStyle(props, values.clickableTypes);
 
 	return (
 		<div
 			onClick={props.onClick}
-			className={`text ${fontSize} ${fontWeight} dark clickable`}
+			className={`text ${fontSize} ${fontWeight} ${clickableTypes}`}
 			style={styles.Style(props)}>
 			{props.children}
 		</div>
@@ -102,5 +103,10 @@ const values = {
 	fontWeight: {
 		bold: 'font-bold',
 		default: 'font-normal',
+	},
+	clickableTypes: {
+		light: 'clickable-light',
+		dark: 'clickable-dark',
+		default: 'clickable',
 	},
 };

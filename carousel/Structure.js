@@ -8,12 +8,12 @@ export function Structure(props) {
 	const image = useCarousal(props);
 
 	const prev = () =>
-		imageNumber == 0
+		imageNumber === 0
 			? setImageNumber(image.length - 1)
 			: setImageNumber(imageNumber - 1);
 
 	const next = () =>
-		imageNumber == image.length - 1
+		imageNumber === image.length - 1
 			? setImageNumber(0)
 			: setImageNumber(imageNumber + 1);
 

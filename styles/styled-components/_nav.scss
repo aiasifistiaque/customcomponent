@@ -1,7 +1,9 @@
 .nav {
+	position: relative;
 	display: flex;
 	flex: 1;
-	padding: 15px 20px;
+	//padding: 15px 20px;
+	height: 8vh;
 	width: 100%;
 	box-sizing: border-box;
 	background-color: rgba(0, 0, 0, 0.8);
@@ -9,6 +11,10 @@
 	align-items: center;
 	top: 0;
 	left: 0;
+}
+
+.nav-transparent-not-scrolled {
+	background-color: transparent;
 }
 
 .nav-transparent-scrolled {

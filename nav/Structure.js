@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Style } from '../functions';
 import { useScreenSize, useScrolled, useStyle } from '../hooks';
 
@@ -13,24 +13,50 @@ const Structure = props => {
 	);
 };
 
+/**
+ *This is the NavBar Component
+ */
 export const Navbar = props => {
 	const scrolled = useScrolled();
 	isTransparent = props.transparent;
+	const styleTransparent = () => {
+		if (!props.transparent) return '';
+		else if (scrolled) return 'nav-transparent-scrolled';
+		else return 'nav-transparent-not-scrolled';
+	};
 	const customClass = useStyle(props, {
+		default: '',
 		shadow: 'nav-shadow',
-		fixed: 'fixed-nav',
-		transparent: scrolled ? 'nav-transparent-scrolled' : 'bg-transparent',
 	});
-	const styleClass = `nav ${customClass}`;
-	return <Structure className={styleClass} {...props} />;
+	const styleFixed = useStyle(props, {
+		fixed: 'fixed-nav',
+		default: '',
+	});
+	const styleClass = `nav ${customClass} ${styleTransparent()} ${styleFixed}`;
+	console.log(styleClass);
+	return (
+		<div style={{ width: '100%' }}>
+			<Structure className={styleClass} {...props} />
+			{props.fixed && !props.transparent ? (
+				<div style={{ marginTop: 48 }} />
+			) : null}
+		</div>
+	);
 };
 
+/**
+ * Container of items inside navbar
+ * @param {center/left/right} allignment of the items inside container
+ */
 export const NavContainer = props => {
 	const customClass = useStyle(props, values.containerAllignment);
 	const styleClass = `nav-item-container ${customClass}`;
 	return <Structure className={styleClass} {...props} />;
 };
 
+/**
+ *Items of navbar
+ */
 export const NavItem = props => {
 	return (
 		<a href={props.to} className='nav-item' style={Style(props)}>

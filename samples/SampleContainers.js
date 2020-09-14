@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Content } from '../index';
+import { Navbar, NavContainer, NavItem } from '../nav/Structure';
 
 export default function SampleContainers() {
 	return (

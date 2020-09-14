@@ -277,7 +277,6 @@
           flex: 1;
   margin: 0;
   width: 100%;
-  height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -ms-flex-wrap: wrap;
@@ -286,6 +285,7 @@
 
 .container-full {
   min-height: 100vh;
+  max-height: unset;
 }
 
 .container-horizontal {
@@ -377,9 +377,9 @@
 }
 
 .btn {
-  border: 1px solid black;
-  font-size: 14px;
-  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 450;
   text-decoration: none;
   display: inline-block;
   text-align: center;
@@ -388,7 +388,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  vertical-align: center;
   text-justify: center;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -398,15 +397,12 @@
   overflow: hidden;
   text-align: center;
   text-transform: capitalize;
-  padding: 12px 20px;
+  padding: 11px 22px;
   background-color: rgba(0, 0, 0, 0.8);
-  color: rgba(255, 255, 255, 0.95);
+  color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin: 10px 0px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 
 .btn:hover {
@@ -415,9 +411,9 @@
 }
 
 .btn-primary {
-  border: 1px solid #006079;
-  font-size: 14px;
-  font-weight: 500;
+  border: 1px solid rgba(0, 96, 121, 0.8);
+  font-size: 16px;
+  font-weight: 450;
   text-decoration: none;
   display: inline-block;
   text-align: center;
@@ -426,7 +422,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  vertical-align: center;
   text-justify: center;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -436,15 +431,12 @@
   overflow: hidden;
   text-align: center;
   text-transform: capitalize;
-  padding: 12px 20px;
+  padding: 11px 22px;
   background-color: rgba(0, 96, 121, 0.8);
-  color: rgba(255, 255, 255, 0.95);
+  color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin: 10px 0px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 
 .btn-primary:hover {
@@ -453,9 +445,9 @@
 }
 
 .btn-secondary {
-  border: 1px solid limegreen;
-  font-size: 14px;
-  font-weight: 500;
+  border: 1px solid rgba(50, 205, 50, 0.8);
+  font-size: 16px;
+  font-weight: 450;
   text-decoration: none;
   display: inline-block;
   text-align: center;
@@ -464,7 +456,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  vertical-align: center;
   text-justify: center;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -474,15 +465,12 @@
   overflow: hidden;
   text-align: center;
   text-transform: capitalize;
-  padding: 12px 20px;
+  padding: 11px 22px;
   background-color: rgba(50, 205, 50, 0.8);
-  color: rgba(255, 255, 255, 0.95);
+  color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin: 10px 0px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 
 .btn-secondary:hover {
@@ -491,9 +479,9 @@
 }
 
 .btn-light {
-  border: 1px solid white;
-  font-size: 14px;
-  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  font-weight: 450;
   text-decoration: none;
   display: inline-block;
   text-align: center;
@@ -502,7 +490,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  vertical-align: center;
   text-justify: center;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -512,15 +499,12 @@
   overflow: hidden;
   text-align: center;
   text-transform: capitalize;
-  padding: 12px 20px;
+  padding: 11px 22px;
   background-color: rgba(255, 255, 255, 0.8);
-  color: rgba(0, 0, 0, 0.95);
+  color: black;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin: 10px 0px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 
 .btn-light:hover {
@@ -528,10 +512,10 @@
   color: black;
 }
 
-.btn-transparent {
-  border: 1px solid transparent;
-  font-size: 14px;
-  font-weight: 500;
+.btn-slate {
+  border: 1px solid rgba(106, 90, 205, 0.8);
+  font-size: 16px;
+  font-weight: 450;
   text-decoration: none;
   display: inline-block;
   text-align: center;
@@ -540,7 +524,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  vertical-align: center;
   text-justify: center;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -550,16 +533,116 @@
   overflow: hidden;
   text-align: center;
   text-transform: capitalize;
-  padding: 12px 20px;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: rgba(106, 90, 205, 0.95);
+  padding: 11px 22px;
+  background-color: rgba(106, 90, 205, 0.8);
+  color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin: 10px 0px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+}
+
+.btn-slate:hover {
+  background-color: slateblue;
+  color: white;
+}
+
+.btn-blue {
+  border: 1px solid rgba(30, 144, 255, 0.8);
+  font-size: 16px;
+  font-weight: 450;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-justify: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 11px 22px;
+  background-color: rgba(30, 144, 255, 0.8);
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin: 10px 0px;
+}
+
+.btn-blue:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.btn-danger {
+  border: 1px solid rgba(220, 20, 60, 0.8);
+  font-size: 16px;
+  font-weight: 450;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-justify: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 11px 22px;
+  background-color: rgba(220, 20, 60, 0.8);
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin: 10px 0px;
+}
+
+.btn-danger:hover {
+  background-color: crimson;
+  color: white;
+}
+
+.btn-transparent {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 450;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-justify: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 11px 22px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: slateblue;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin: 10px 0px;
   background-color: transparent;
+  border: none;
 }
 
 .btn-transparent:hover {
@@ -572,9 +655,9 @@
 }
 
 .btn-link {
-  border: 1px solid transparent;
-  font-size: 14px;
-  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 450;
   text-decoration: none;
   display: inline-block;
   text-align: center;
@@ -583,7 +666,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  vertical-align: center;
   text-justify: center;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -593,17 +675,15 @@
   overflow: hidden;
   text-align: center;
   text-transform: capitalize;
-  padding: 12px 20px;
+  padding: 11px 22px;
   background-color: rgba(0, 0, 0, 0.8);
-  color: rgba(9, 114, 211, 0.95);
+  color: #0972d3;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin: 10px 0px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   color: #0972d3;
   background-color: transparent;
+  border: none;
 }
 
 .btn-link:hover {
@@ -660,9 +740,9 @@
 }
 
 .button-block {
-  border: 1px solid black;
-  font-size: 14px;
-  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 450;
   text-decoration: none;
   display: inline-block;
   text-align: center;
@@ -671,7 +751,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  vertical-align: center;
   text-justify: center;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -681,15 +760,12 @@
   overflow: hidden;
   text-align: center;
   text-transform: capitalize;
-  padding: 12px 20px;
+  padding: 11px 22px;
   background-color: rgba(0, 0, 0, 0.8);
-  color: rgba(255, 255, 255, 0.95);
+  color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin: 10px 0px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   background-color: rgba(0, 255, 0, 0.7);
   color: white;
   margin: 0;
@@ -1083,19 +1159,6 @@
   color: rgba(0, 0, 0, 0.7);
 }
 
-.clickable {
-  margin: 5px;
-  color: rgba(0, 0, 0, 0.7);
-  padding: 10px;
-}
-
-.clickable:hover {
-  padding: 10px 20%;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-}
-
 .text {
   margin: 5px;
   font-weight: 330;
@@ -1142,13 +1205,14 @@
 }
 
 .nav {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 15px 20px;
+  height: 8vh;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1159,6 +1223,10 @@
           align-items: center;
   top: 0;
   left: 0;
+}
+
+.nav-transparent-not-scrolled {
+  background-color: transparent;
 }
 
 .nav-transparent-scrolled {
@@ -1557,9 +1625,9 @@
 }
 
 .button-big {
-  border: 1px solid black;
-  font-size: 14px;
-  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 450;
   text-decoration: none;
   display: inline-block;
   text-align: center;
@@ -1568,7 +1636,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  vertical-align: center;
   text-justify: center;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -1578,15 +1645,12 @@
   overflow: hidden;
   text-align: center;
   text-transform: capitalize;
-  padding: 12px 20px;
+  padding: 11px 22px;
   background-color: rgba(0, 0, 0, 0.8);
-  color: rgba(255, 255, 255, 0.95);
+  color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin: 10px 0px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   background-color: limegreen;
   color: white;
   padding: 20px 100px;
@@ -1603,9 +1667,9 @@
 }
 
 .button-white {
-  border: 1px solid black;
-  font-size: 14px;
-  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 450;
   text-decoration: none;
   display: inline-block;
   text-align: center;
@@ -1614,7 +1678,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  vertical-align: center;
   text-justify: center;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -1624,15 +1687,12 @@
   overflow: hidden;
   text-align: center;
   text-transform: capitalize;
-  padding: 12px 20px;
+  padding: 11px 22px;
   background-color: rgba(0, 0, 0, 0.8);
-  color: rgba(255, 255, 255, 0.95);
+  color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin: 10px 0px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   background-color: color;
   color: #006079;
   padding: 15px 40px;
@@ -1649,9 +1709,9 @@
 }
 
 .button-secondary-big {
-  border: 1px solid black;
-  font-size: 14px;
-  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 450;
   text-decoration: none;
   display: inline-block;
   text-align: center;
@@ -1660,7 +1720,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  vertical-align: center;
   text-justify: center;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -1670,15 +1729,12 @@
   overflow: hidden;
   text-align: center;
   text-transform: capitalize;
-  padding: 12px 20px;
+  padding: 11px 22px;
   background-color: rgba(0, 0, 0, 0.8);
-  color: rgba(255, 255, 255, 0.95);
+  color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin: 10px 0px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   background-color: rgba(0, 255, 0, 0.95);
   color: rgba(0, 0, 0, 0.7);
   margin: 10px 0px;
@@ -1830,6 +1886,230 @@
       align-self: flex-end;
 }
 
+.c-container-form {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 30px;
+  margin: 10px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 3px solid whitesmoke;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+}
+
+.c-form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.c-form {
+  width: inherit;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.9);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.c-form-label-vertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.c-form-label-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .c-form-label-inline {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.c-input {
+  width: inherit;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  margin: 0;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 200;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  width: inherit;
+}
+
+.c-input:focus {
+  outline-color: rgba(0, 0, 0, 0.5);
+}
+
+.c-form-label {
+  font-size: 14px;
+  font-weight: 550;
+  color: rgba(0, 0, 0, 0.7);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.c-inline-label {
+  margin: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .c-inline-label {
+    margin: 0px 3px 8px 0;
+  }
+}
+
+.c-vertical-label {
+  margin: 0px 3px 8px 0;
+}
+
+.c-input-warning {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 13px;
+  margin: 5px 0 0 1px;
+  font-weight: 450;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.c-warning-spacing {
+  display: inherit;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media only screen and (max-width: 900px) {
+  .c-warning-spacing {
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+  }
+}
+
+.no-border {
+  border: none;
+}
+
+.border {
+  border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.border-thick {
+  border: 3px solid whitesmoke;
+}
+
+.width-block {
+  width: 90%;
+}
+
+.width-small {
+  width: 30%;
+  min-width: 300px;
+}
+
+.width-regular {
+  width: 50%;
+  min-width: 300px;
+}
+
+.c-rounded {
+  border-radius: 25px;
+}
+
+.clickable, .clickable-light, .clickable-dark {
+  margin: 5px;
+  color: inherit;
+  padding: 10px;
+}
+
+.clickable:hover, .clickable-light:hover, .clickable-dark:hover {
+  padding: 10px 20%;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  cursor: pointer;
+}
+
+.clickable-light {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.clickable-light:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.clickable-dark {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.clickable-dark:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -1840,5 +2120,15 @@ body {
 
 .container {
   padding: 100;
+}
+
+.theme-dark {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.theme-light {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 /*# sourceMappingURL=style.css.map */

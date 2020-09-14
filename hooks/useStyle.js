@@ -7,7 +7,7 @@ export function useStyle(props, obj) {
 	const singleStyleClass = (val, obj) => {
 		let className = '';
 		Object.keys(obj).forEach(key => {
-			if (key == val) className = obj[key];
+			if (key === val) className = obj[key];
 		});
 		return className;
 	};

@@ -8,3 +8,4 @@ export * from './footer/index';
 export * from './container/index';
 export * from './card/index';
 export * from './nav/Structure';
+export * from './forms/index';

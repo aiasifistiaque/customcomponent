@@ -4,12 +4,9 @@ import {
 	Slide,
 	SlideImage,
 	SlideCaption,
-	SlideTitle,
 	SlideSubTitle,
-	slideContent,
 	SlideContent,
 } from './Structure';
-import { Content } from '../';
 
 export default function CarOne() {
 	return (

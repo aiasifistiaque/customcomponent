@@ -17,6 +17,8 @@
 @import './styled-components/margin';
 @import './styled-components/temp';
 @import './styled-components/carousel';
+@import './styled-components/forms';
+@import './styled-components/clickables';
 
 body {
 	padding: 0;
@@ -28,4 +30,14 @@ body {
 
 .container {
 	padding: 100;
+}
+
+.theme-dark {
+	background-color: rgba($color: black, $alpha: 0.8);
+	color: rgba($color: white, $alpha: 0.8);
+}
+
+.theme-light {
+	background-color: rgba($color: white, $alpha: 0.8);
+	color: rgba($color: black, $alpha: 0.8);
 }
